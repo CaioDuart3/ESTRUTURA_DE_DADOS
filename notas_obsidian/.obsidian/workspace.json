@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "961e6e598a556ca7",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ff9c7d2d3e1b2b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2b82bfa80b4155c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "EstruturaDeDados/Pilhas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Pilhas"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ab5b3b4d67978698",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a15c385bd284f02",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65787c9efa4f80f0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "870127f8f6ec5307",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "019c62447e323776",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "20fa16c7fab1cce7",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a98e03d9f792175",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b53d4bb9d2b1d6f3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "EstruturaDeDados/FIlas.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para FIlas"
+            }
+          },
+          {
+            "id": "e5901c025996f9eb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "EstruturaDeDados/FIlas.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para FIlas"
+            }
+          },
+          {
+            "id": "6d0357f80d7dbda1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "25baee6d9409c658",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "EstruturaDeDados/FIlas.md"
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de FIlas"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "c2b82bfa80b4155c",
+  "lastOpenFiles": [
+    "EstruturaDeDados/imagens/Pasted image 20241224183518.png",
+    "EstruturaDeDados/imagens/Pasted image 20241224184336.png",
+    "EstruturaDeDados/Lista estática.md",
+    "EstruturaDeDados/Lista encadeada.md",
+    "EstruturaDeDados/FIlas.md",
+    "EstruturaDeDados/Pilhas.md",
+    "EstruturaDeDados/imagens/pilha.png",
+    "[.md",
+    "Pilhas.md",
+    "EstruturaDeDados/imagens/Pasted image 20241224184400.png",
+    "EstruturaDeDados/imagens/Pasted image 20241224184432.png",
+    "EstruturaDeDados/imagens/Pasted image 20241224182130.png",
+    "EstruturaDeDados/imagens/Pasted image 20241224182351.png",
+    "EstruturaDeDados/Arvores.md",
+    "EstruturaDeDados/TAD.md",
+    "EstruturaDeDados/imagens/fila_exemplo.png",
+    "Sem título 1.canvas",
+    "Sem título.canvas",
+    "EstruturaDeDados/Sem título.canvas",
+    "EstruturaDeDados/imagens/Sem título",
+    "create a link.md",
+    "Welcome.md",
+    "EstruturaDeDados/imagens",
+    "EstruturaDeDados"
+  ]
+}

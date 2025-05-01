@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "1b5be6b8005d8d55",
+    "type": "split",
+    "children": [
+      {
+        "id": "bc6541224f08244d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f92140a418af1c26",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "imagens/Pasted image 20250202124806.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250202124806"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d57a09a93f7e79ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ded70319524630c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "541afa0e926dc1bf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "53b143ef62b42c57",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "4cd7bf9401927297",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "e6f1d9d60cc7570a",
+    "type": "split",
+    "children": [
+      {
+        "id": "229299193fa17509",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ab1270e7ce861499",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Arvore.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Arvore"
+            }
+          },
+          {
+            "id": "6fa9c2daf789a7ef",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Arvore.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Arvore"
+            }
+          },
+          {
+            "id": "cf63c573efe99134",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0bad9fc899ba459e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Arvore.md"
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Arvore"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "541afa0e926dc1bf",
+  "lastOpenFiles": [
+    "Filas de prioridades.md",
+    "imagens/Pasted image 20250202124806.png",
+    "heap-sort.md",
+    "imagens/Pasted image 20250202123954.png",
+    "imagens/Pasted image 20250202124923.png",
+    "imagens/Pasted image 20250202124018.png",
+    "imagens/Pasted image 20250202124910.png",
+    "imagens/Pasted image 20250202124838.png",
+    "imagens/Pasted image 20250202124829.png",
+    "imagens/Pasted image 20250202124815.png",
+    "imagens/Pasted image 20250202124239.png",
+    "imagens/Pasted image 20250202124231.png",
+    "intro-sort.md",
+    "ABB.md",
+    "Lista encadeada.md",
+    "TAD.md",
+    "FIlas.md",
+    "Arvore.md",
+    "heap-binaria.md",
+    "Grafo.md",
+    "Pilhas.md",
+    "Lista estática.md",
+    "2025-01-06.md",
+    "Sem título.canvas",
+    "EstruturaDeDados/Pilhas.md",
+    "EstruturaDeDados",
+    "Arvores.md"
+  ]
+}

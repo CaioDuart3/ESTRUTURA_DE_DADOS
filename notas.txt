@@ -1,0 +1,215 @@
+listas:
+
+    Adjascencias:
+    # estudar oq é (slide de listas) e sua complexidade (slide de complexidade).
+
+    lista estática definição:
+            Alocação contígua/sequencial na memória
+            Acesso aleatório e direto pelo índice/posição: tempo constante
+            Inserção: tempo constante
+            Remoções no meio: tempo linear (percorrer a lista)
+            Busca sequencial: tempo linear (percorrer a lista)
+
+
+    lista encadeada:
+        - definição:
+            Sequência de células/nós
+            Alocação conforme necessidade
+            Remoção de um nó específico:
+                ▶ Simples: tempo linear
+                ▶ Dupla: tempo constante
+            Inserção antes/após um nó específico:
+                ▶ Simples: tempo linear(antes), tempo constante(após)
+                ▶ Dupla: tempo constante
+            Busca sequencial
+            Sem acesso direto a uma posição
+            Implementações:
+                ▶ Sem cabeça, com cabeça, com cauda, com cabeça e cauda
+                ▶ Cabeça do mesmo tipo dos elementos do corpo
+                ▶ Cabeça com elementos diferentes do corpo
+            Tipos: simplesmente, duplamente, circular, multilista
+
+        - lista simplesmente encadeada:
+                - ultimo nó aponta para NULL
+                com/sem cabeça;
+                com/sem cauda;
+                com/sem cabeça com metadados;
+
+        - lista duplamente encadeada;
+                - além de apontar para o próximo, aponta para o anterior
+                - anterior do primeiro nó aponta para NULl e proximo do ultimo nó aponta para NULL
+
+        - circular
+                Simplesmente Encadeada Circular:
+
+                    Cada nó possui um único ponteiro que aponta para o próximo elemento.
+                    O último nó aponta para o primeiro nó, fechando o ciclo.
+                    Duplamente Encadeada Circular:
+
+                Cada nó possui dois ponteiros:
+
+                    Um para o próximo nó.
+                    Outro para o nó anterior.
+                    O primeiro nó aponta para o último no campo "anterior".
+                    O último nó aponta para o primeiro no campo "próximo".
+
+        - multilista:
+                - apontamentos (tanto anterior quanto posterior) não seguem uma ordem/padrão estabelecido de apontamento.
+    
+pilha:
+    ultimo a entrar, primeiro a sair.
+
+
+
+
+ponteiros:
+    TIPO *ponteiro;
+    tipo: int, float, struct, void;
+    tamanho do ponteiro é fixo determinado pela arquitetura do computador.
+
+Alocação de memória: 
+    alocação:
+        dinâmica: heap.
+        automática: stack. alocação automatica feita pelo SO, tempo de vida enquanto a função existir, tamanho limitado pelo SO
+        estática: data.
+    
+    memorias:
+        heap: memoria dinamica (malloc, calloc, realloc).
+        stack: variáveis locais.
+        data: variaveis globais e estáticas.
+        text: código executado em tempo real.
+
+    variaveis: 
+        locais: dentro de um escopo.
+
+        globais: foras de escopo podem ser impotadas de forma publica.
+
+        estáticas:
+                Tempo de vida: Uma variável estática é alocada apenas uma vez e existe durante todo o tempo de execução do programa. Isso significa que seu valor é preservado entre as chamadas de função.
+                Escopo: funcionam somente dentro do seu escopo, não podem ser importadas
+    malloc != calloc:
+        malloc aloca endereços aleatorios
+        calloc aloca endereços aleatorios mas zerados
+        
+Tipo de variável	Escopo	            Tempo de vida	                        Memória usada
+Local               Dentro do bloco	    Criada e destruída a cada chamada	    Pilha (Stack)
+Global	            Arquivo inteiro    	Durante todo o programa             	Dados (ou BSS)
+Local estática	    Dentro do bloco	    Durante todo o programa             	Dados
+Global estática	    Arquivo inteiro 	Durante todo o programa	                Dados
+    
+
+# Recursão:
+
+    São implementadas através de funções:
+    ▶ Que invocam a si mesmas
+    ▶ Chamadas de funções recursivas
+    Concentra-se na solução do núcleo do problema, sendo as partes resolvidas
+    pela recursão
+    O problema é dividido em partes, que são resolvidas aplicando-se a mesma
+    solução/fórmula
+    ▶ Repetidas aplicações da mesma solução para diversas partes
+    Importante: condição de parada é necessária para terminar a recursão
+    Sistemas atuais contribuem no processamento das recursividades:
+    ▶ Compiladores ecientes: otimizações contribuem para o uso eciente dos
+    recursos
+    ▶ Stacks: possibilitaram o empilhamento das funções
+
+# Complexidade:
+
+    Análise de algoritmos: analisar a quantidade de recursos que um algoritmo
+    necessita para resolver um problema
+    Considerar somente as operações relevantes
+    Observando a tendência do comportamento a medida que a instância do
+    problema cresce
+    ▶ Sequência de entrada para um problema computacional resolver
+    (calcular/soluções) ou decidir (encontrar uma solução verdadeira) ou vericar
+    (se uma solução é válida)
+    Fazendo uma estimativa dos custos das operações
+    ▶ Denindo a custo dos algoritmos
+    ▶ E a complexidade assintótica
+
+    custos em ordem do mais rapido até o mais lento:
+
+    [imagem do grafico do custo]
+
+    O(K) - constante.
+
+    O(log n) - logaritimico  -> divide;  ex: busca binaria;
+
+    O(n) - linear ->  processamentos em laços;
+
+    O(n log n) - linearitimico. -> divide + junta; ordenações eficientes;
+
+    O(n²) - quadratico. ->   processamentos em laços²
+
+    O(n³) - cubico. ->  processamentos em laços³
+
+    O(2^n) - esponencial. ->  recursões constantes; ex: fibonacci
+
+    O(n!) - fatorial. -> n recursoes; ex: fatorial com while
+
+
+    algoritimos eficientes: dvisão e conquista, merge e quick
+
+    analise de complexidade passo a passo: 
+
+        1- identificar laços e seus custos linha a linha;
+        2- achar formula fechada
+        2- identificar a complexidade pelo maior termo (mais lento);
+
+
+Buscas:
+    Binária:
+        ideia: pegar um vetor já ordenado e encontrar o elemento por meio de divisões 
+        complexidade: log n
+    [implementar código]
+
+
+SORTS:
+
+    complexidade temporal: quesito tempo de uma ordenação
+    complexidade espacial: quesito espaço de memoria de uma ordenação
+
+    Estável: mantem a posição relativa entre os elementos.
+        antes:  1 2' 5 2 7
+        depois: 1 2' 2 5 7
+
+    In-place: ordena em sua própria estrutura.
+    Adaptativo: aproveita a ordenação.
+
+    swap de  saltos tende a tornar a ordenação instavel.
+
+    COMPLEXIDADES (sem otimizações):
+
+        ELEMENTARES:
+            Selection Sort- achar o menor elemento e fazer swap na posição da iteração.
+            iteração = 0, achar menor e por em posição=0
+            iteração = 1, achar menor e por em posicao =1;
+            swap de saltos.
+
+                Pior, médio e melhor caso: O(n²)
+
+            Bubble Sort-
+                Pior  e Médio caso: O(n²)
+                Melhor caso: O(n)
+
+            Insertion Sort-
+                Pior  e Médio caso: O(n²)
+                Melhor caso: O(n)
+
+            Shell Sort-
+                Pior caso: O(n²) -> pior caso com pior h
+                Médio caso: O(n log²(n)) ->  melhor caso com pior h
+                Melhor caso: O(n log(n)) -> melhor caso com bom h
+
+        EFETIVOS: 
+            Merge Sort-
+                Pior, Médio, Melhor caso: O(n log n)
+
+            Quick Sort-
+                Caracteristícas importantes:
+                    - ótimo para casos aleatórios
+
+                Pior caso: O(n²) -> vetor ordenado, semi-ordenado, reverso
+                Médio e melhor caso: O(n log(n))
+                pivo:
