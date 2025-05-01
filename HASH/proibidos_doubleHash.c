@@ -1,0 +1,75 @@
+// ! não implementado
+
+//endereçamento aberto
+//com double hash
+#include <stdio.h>
+#include <stdlib.h>
+#define hash(v,m) (v%m)
+#define hashTwo(v) ( (v%97)+1) //numero primo
+
+#define maxCol 10
+#define eq(A,B) ((A)==(B))
+
+int *ht; //aponta para uma lista de inteiros
+int M; //qtd de posiçoes em ht (tamanho da lista)
+
+void STinit(int max){
+    //aloca na memória
+    ht = malloc(sizeof(int)*max);
+    M = max;
+    //preenche os endereços de ht com -1 (valores nulo)
+    for (int i = 0; i < max; i++){
+        ht[i] = -1;
+    }
+}
+
+void HTinsert(int inserido){
+    int h = hash(inserido, M); //encontra a posição hasheada
+    int h2 = hashTwo(inserido);
+    int hn = -1;
+
+    //enquanto puder dar colisão e encontrar valores nas posições da lista
+    for (int colisoes = maxCol;  colisoes > 0; colisoes--, h=(h+h2)%M){
+        if(eq(ht[h], -1)){ // Se encontro -1, posso inserir
+            hn = h;
+        }
+        else if(eq(ht[h], inserido)){ //Se encontro o inserido já lá, então não posso inserir mais
+            return;
+        }
+    }
+    if(hn !=-1){
+        ht[hn] = inserido;
+    }
+}
+
+int HTsearch(int inserido){
+    int h = hash(inserido, M); //encontra a posição hasheada
+    int h2 = hashTwo(inserido);
+    int colisoes = maxCol;
+
+    //enquanto puder dar colisão e encontrar valores nas posições da lista
+    while (colisoes && !eq(ht[h],inserido)){
+        colisoes--; //diminui as colisões
+        h = (h+h2)%M;
+    }
+    if(!colisoes){
+        return -1;
+    }
+    return ht[h];
+}
+
+
+int main(){
+    int qtd_num_proibi, numero, proibido;
+    scanf("%d", &qtd_num_proibi);
+    STinit(1000003);
+    for (int x = 0; x < qtd_num_proibi; x++){
+        scanf("%d", &proibido);
+        HTinsert(proibido);
+    }
+    while(scanf("%d", &numero) != EOF){
+        if(HTsearch(numero) != -1) printf("sim\n");
+        else printf("nao\n");
+    }
+    return 0;
+}
